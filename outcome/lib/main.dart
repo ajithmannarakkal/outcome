@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:outcome/settings.dart';
 
 import 'homepage.dart';
 
@@ -14,6 +15,11 @@ class MyApp extends StatelessWidget {
       primarySwatch: Colors.green
     ),
       home: HomePage(),
+      routes: {
+      'sett':(ctx){
+        return Settings();
+      }
+      },
     );
   }
 }

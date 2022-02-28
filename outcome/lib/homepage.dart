@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:outcome/settings.dart';
 import 'package:outcome/transactions.dart';
 
 import 'graph.dart';
@@ -13,7 +14,12 @@ class HomePage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
+                return Settings();
+              }
+              ));
+            },
             icon: CircleAvatar(
               radius: 30,
               backgroundColor: Colors.white,
@@ -25,19 +31,23 @@ class HomePage extends StatelessWidget {
           actions: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: IconButton(onPressed: (){}, icon: Icon(Icons.settings)
+              child: IconButton(onPressed: () {
+                Navigator.of(context).pushNamed('sett');
+              }, icon: Icon(Icons.settings)
               ),
             )
           ],
           bottom: TabBar(tabs: [
-            Tab(text: "Summary",),Tab(text: "Transaction"),Tab(text: "Graphical",)
+            Tab(text: "Summary",),
+            Tab(text: "Transaction"),
+            Tab(text: "Graphical",)
           ],),
 
         ),
         body: Scaffold(
           body: TabBarView(children: [
-    Summary(),Transactions(),Graph(),
-    ],),
+            Summary(), Transactions(), Graph(),
+          ],),
         ),
       ),
     );
