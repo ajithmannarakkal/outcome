@@ -31,7 +31,10 @@ class Summary extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text("100",style: TextStyle(fontWeight: FontWeight.bold),)
+                          Text(
+                            "100",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
                         ],
                       ),
                     ),
@@ -42,7 +45,10 @@ class Summary extends StatelessWidget {
                           SizedBox(
                             height: 5,
                           ),
-                          Text("100",style: TextStyle(fontWeight: FontWeight.bold),)
+                          Text(
+                            "100",
+                            style: TextStyle(fontWeight: FontWeight.bold),
+                          )
                         ],
                       ),
                     )
@@ -53,9 +59,30 @@ class Summary extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: const Icon(Icons.add),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          FloatingActionButton.extended(
+            backgroundColor: Colors.green,
+            onPressed: () {
+              Navigator.of(context).pushNamed("entry");
+
+            },
+            icon: const Icon(Icons.add),
+            label: const Text("Income"),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          FloatingActionButton.extended(
+            backgroundColor: Colors.red,
+            onPressed: () {
+              Navigator.of(context).pushNamed("outentry");
+            },
+            icon: const Icon(Icons.remove),
+            label: const Text("Expense"),
+          )
+        ],
       ),
     );
   }

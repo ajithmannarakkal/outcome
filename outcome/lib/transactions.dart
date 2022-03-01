@@ -5,10 +5,11 @@ class Transactions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body:
-    const Center(child: Text("press"),),
-      floatingActionButton: FloatingActionButton(onPressed: (){}
-        ,
-        child: const Icon(Icons.add),),);
+    return Scaffold(
+      body: const Center(
+        child: Text("press"),
+      ),
+
+    );
   }
 }

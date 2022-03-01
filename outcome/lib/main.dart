@@ -1,24 +1,35 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:outcome/entry.dart';
+import 'package:outcome/outentry.dart';
 import 'package:outcome/settings.dart';
 
 import 'homepage.dart';
 
-void main(){
+void main() {
   runApp(MyApp());
 }
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,theme: ThemeData(
-      primarySwatch: Colors.green
-    ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.blueGrey),
       home: HomePage(),
       routes: {
-      'sett':(ctx){
-        return Settings();
-      }
+        'sett': (ctx) {
+          return Settings();
+        },
+        'entry': (ctx) {
+          return EntryIn();
+        },
+        'outentry': (ctx) {
+          return EntryOut();
+        },
       },
     );
   }
