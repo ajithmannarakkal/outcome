@@ -11,7 +11,13 @@ class Summary extends StatelessWidget {
         child: Container(
           width: 360,
           height: 120,
-          color: Colors.blue,
+          decoration: BoxDecoration(
+              color: Colors.tealAccent,
+              border: Border.all(color: Colors.black, width: 2),
+          borderRadius: BorderRadius.circular(10),
+            gradient: const LinearGradient(colors: [Colors.grey,Colors.indigo]),
+            boxShadow: const[BoxShadow(color: Colors.lightGreen,blurRadius: 10,offset: Offset(2, 5))]
+          ),
           child: Column(
             children: [
               Text("Date"),
@@ -66,7 +72,6 @@ class Summary extends StatelessWidget {
             backgroundColor: Colors.green,
             onPressed: () {
               Navigator.of(context).pushNamed("entry");
-
             },
             icon: const Icon(Icons.add),
             label: const Text("Income"),
