@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:outcome/profile.dart';
 import 'package:outcome/settings.dart';
 import 'package:outcome/transactions.dart';
 
@@ -16,7 +17,7 @@ class HomePage extends StatelessWidget {
           leading: IconButton(
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (ctx) {
-                return Settings();
+                return ProfileView();
               }
               ));
             },

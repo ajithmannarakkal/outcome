@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:outcome/entry.dart';
 import 'package:outcome/outentry.dart';
+import 'package:outcome/profile.dart';
 import 'package:outcome/settings.dart';
 
 import 'homepage.dart';
@@ -23,6 +24,9 @@ class MyApp extends StatelessWidget {
       routes: {
         'sett': (ctx) {
           return Settings();
+        },
+        'profile':(ctx) {
+          return ProfileView();
         },
         'entry': (ctx) {
           return EntryIn();

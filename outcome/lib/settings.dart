@@ -12,7 +12,7 @@ class _SettingsState extends State<Settings> {
   bool _theme=false;
   bool _notify=false;
   bool _applock=false;
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,15 +25,15 @@ class _SettingsState extends State<Settings> {
               'https://i.insider.com/61a10537ee9795001883f280?width=1136&format=jpeg'),),
           title: Text('Ajith'),
           subtitle: Text('+91 8129953094'),
-          trailing: IconButton(onPressed: (){}, icon: Icon(Icons.edit)),
+          trailing: IconButton(onPressed: (){}, icon: Icon(Icons.edit,color: Colors.blue,)),
         ),
 
-        SwitchListTile(title: Text("Dark theme"),value: _theme, onChanged: (bool value){
+        SwitchListTile(activeColor: Colors.blue,title: Text("Dark theme"),value: _theme, onChanged: (bool value){
           setState(() {
             _theme=value;
 
           });
-        }),SwitchListTile(
+        }),SwitchListTile(activeColor: Colors.blue,
         title: Text("Notification Widget"),value: _notify, onChanged: (bool value)
     {
       setState(() {
@@ -41,18 +41,18 @@ _notify=value;
       });
     }
         ),
-        WidgetOne(icons: Icons.language,title: 'Change Language',onTap: (){},),
+        WidgetOne(color: Colors.blue,icons: Icons.language,title: 'Change Language',onTap: (){},),
         SizedBox(height: 15,),
-        WidgetOne(icons: Icons.help,title: 'Help',onTap: (){},),
+        WidgetOne(color: Colors.blue,icons: Icons.help,title: 'Help',onTap: (){},),
         SizedBox(height: 15,),
-        WidgetOne(icons: Icons.share,title: 'Invite a Friend',onTap: (){},),
+        WidgetOne(color: Colors.blue,icons: Icons.share,title: 'Invite a Friend',onTap: (){},),
         SizedBox(height: 15,),
-        WidgetOne(icons: Icons.logout,title: 'Logout',onTap: (){},),
+        WidgetOne(color: Colors.red,icons: Icons.logout,title: 'Logout',onTap: (){},),
         SizedBox(height: 15,),
-        WidgetOne(icons: Icons.delete_forever,title: 'Delete My Account',onTap: (){},),
+        WidgetOne(color: Colors.red,icons: Icons.delete_forever,title: 'Delete My Account',onTap: (){},),
 
         SizedBox(height: 15,),
-        WidgetOne(icons: Icons.info,title: 'About Us',onTap: (){},),
+        WidgetOne(color: Colors.blue,icons: Icons.info,title: 'About Us',onTap: (){},),
 
 
       ],)
