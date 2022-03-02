@@ -6,7 +6,7 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(appBar: AppBar(),
+    return Scaffold(appBar: AppBar(title: Text("Your Profile"),),
       body: Column(
         children: [
           ListTile(
