@@ -28,7 +28,7 @@ class _SettingsState extends State<Settings> {
           trailing: IconButton(onPressed: (){}, icon: Icon(Icons.edit,color: Colors.blue,)),
         ),
 
-        SwitchListTile(activeColor: Colors.blue,title: Text("Dark theme"),value: _theme, onChanged: (bool value){
+        SwitchListTile(activeColor: Colors.blue,title: Text("Dark Theme"),value: _theme, onChanged: (bool value){
           setState(() {
             _theme=value;
 
