@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
                   'https://i.insider.com/61a10537ee9795001883f280?width=1136&format=jpeg'),
             ),
           ),
-          title: Text('Welcome back Elon,'),
+          title: Text('Welcome back Ajith,'),
           actions: [
             Padding(
               padding: const EdgeInsets.all(8.0),

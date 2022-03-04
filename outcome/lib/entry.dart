@@ -39,13 +39,13 @@ class _EntryInState extends State<EntryIn> {
                 },
                 child: Text("date")),
             TextField(style: TextStyle(color: Colors.green),
-              decoration: InputDecoration(border: OutlineInputBorder()),
+              decoration: InputDecoration(hintText: "Amount",border: OutlineInputBorder()),
             ),
             SizedBox(
               height: 10,
             ),
             TextField(style: TextStyle(color: Colors.green),
-              decoration: InputDecoration(border: OutlineInputBorder()),
+              decoration: InputDecoration(hintText: "Remark",border: OutlineInputBorder()),
             ),
             Align(
               alignment: Alignment.topLeft,

@@ -23,7 +23,7 @@ class _SettingsState extends State<Settings> {
         ListTile(
           leading: CircleAvatar(backgroundImage: NetworkImage(
               'https://i.insider.com/61a10537ee9795001883f280?width=1136&format=jpeg'),),
-          title: Text('Ajith'),
+          title: Text('Ajith Mannarakkal'),
           subtitle: Text('+91 8129953094'),
           trailing: IconButton(onPressed: (){}, icon: Icon(Icons.edit,color: Colors.blue,)),
         ),

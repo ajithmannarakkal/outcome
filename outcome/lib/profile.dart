@@ -15,7 +15,7 @@ class ProfileView extends StatelessWidget {
                   'https://i.insider.com/61a10537ee9795001883f280?width=1136&format=jpeg'),
 
             ),
-            title: Text("Elon Musk"),subtitle: Text("+91 8129953094"),
+            title: Text("Ajith Mannarakkal"),subtitle: Text("+91 8129953094"),
             trailing: Icon(Icons.verified,color: Colors.blueAccent,),
           ),
           WidgetOne(color: Colors.red,icons: Icons.logout, title: "Logout",onTap: () {  },)
